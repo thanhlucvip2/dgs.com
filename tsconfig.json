@@ -17,9 +17,10 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-   "paths": {
-    "@config/*": ["src/configs/*"],
-    "@middlewares/*": ["src/middlewares/*"]
-  }
+    "paths": {
+      "@config/*": ["src/configs/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@utils/*": ["src/utils/*"]
+    }
   }
 }
