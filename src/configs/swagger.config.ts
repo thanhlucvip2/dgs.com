@@ -1,11 +1,12 @@
 import { INestApplication } from "@nestjs/common";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
+import { NAME_APP } from "./app.config";
 
 export function setupSwagger(app: INestApplication): void {
     const config = new DocumentBuilder()
-    .setTitle('DGS.COM')
-    .setDescription('Api dsg.com')
-    .setVersion('1.0')
+    .setTitle(NAME_APP)
+    .setDescription(`Api ${NAME_APP}`)
+    .setVersion('v1.0')
     .addBearerAuth({ type: 'http', scheme: 'bearer', in: 'header' }, 'token')
     .build();
 

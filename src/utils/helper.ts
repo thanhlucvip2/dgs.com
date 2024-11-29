@@ -21,3 +21,10 @@ export const checkEmailSpam = (email: string) => {
   });
   return count;
 };
+
+export const pascalToKebabCase = (input) => {
+  return input
+    .replace(/([a-z0-9])([A-Z])/g, '$1-$2') // Thêm dấu "-" giữa chữ thường/số và chữ hoa
+    .replace(/([A-Z])([A-Z][a-z])/g, '$1-$2') // Xử lý các trường hợp chữ hoa liền nhau
+    .toLowerCase(); // Chuyển toàn bộ thành chữ thường
+}

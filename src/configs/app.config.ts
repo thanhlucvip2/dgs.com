@@ -1,6 +1,7 @@
 import 'dotenv/config';
 
 export const PORT = process.env.PORT || 5000;
+export const NAME_APP = process.env.NAME_APP;
 
 export const CIPHER_KEY = process.env.CIPHER_KEY;
 export const CIPHER_IV = process.env.CIPHER_IV;
