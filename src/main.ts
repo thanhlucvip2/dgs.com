@@ -1,13 +1,15 @@
-import { NestFactory } from "@nestjs/core";
+import { NestFactory } from '@nestjs/core';
 
-import { PORT } from "@config/app.config";
-import { Logger } from "@nestjs/common";
-import { setupSwagger } from "@config/swagger.config";
+import { PORT } from '@configs/app.config';
+import { Logger, ValidationPipe } from '@nestjs/common';
+import { setupSwagger } from '@configs/swagger.config';
 
-import { AppModule } from "./app.module";
+import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
 
   // Enable CORS
   app.enableCors();

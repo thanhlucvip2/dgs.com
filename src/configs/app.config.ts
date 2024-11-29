@@ -2,9 +2,11 @@ import 'dotenv/config';
 
 export const PORT = process.env.PORT || 5000;
 export const NAME_APP = process.env.NAME_APP;
+export const API_PREFIX_PATH = process.env.API_PREFIX_PATH;
 
 export const CIPHER_KEY = process.env.CIPHER_KEY;
 export const CIPHER_IV = process.env.CIPHER_IV;
+export const CIPHER_MODE = process.env.CIPHER_MODE;
 
 export const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
 export const JWT_EXPIRED_TIME_TOKEN = process.env.JWT_EXPIRED_TIME_TOKEN;

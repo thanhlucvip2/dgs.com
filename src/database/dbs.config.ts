@@ -6,7 +6,7 @@ import {
   DB_NAME,
   DB_LOGGING,
   DB_SYNC,
-} from '@config/app.config';
+} from '@configs/app.config';
 import { DataSourceOptions } from 'typeorm';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 
