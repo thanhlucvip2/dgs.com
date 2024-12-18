@@ -19,5 +19,6 @@ async function bootstrap() {
 
   await app.listen(PORT ?? 5000);
   Logger.log(`http://localhost:${PORT}/api`);
+  Logger.log(`http://localhost:${PORT}/swagger`);
 }
 bootstrap();

@@ -9,5 +9,6 @@ import { GetProfileController } from './controllers/get-profile.controller';
   imports: [UserModule],
   providers: [AuthService, JwtStrategy],
   controllers: [LoginController, GetProfileController],
+  exports: [AuthService],
 })
 export class AuthModule {}

@@ -19,7 +19,7 @@ export class AuthLoginDTO {
   email: string;
 
   @ApiProperty({
-    example: 'DGS12345@',
+    example: 'dgs@123456',
   })
   @IsNotEmpty({ message: 'password-empty' })
   @MinLength(8, { message: 'password-min-6' })
